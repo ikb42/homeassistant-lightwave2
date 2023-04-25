@@ -1,11 +1,11 @@
 {
   "domain": "lightwave2",
   "name": "Lightwave v2 (Smart Series) custom component",
-  "version": "3.5.20",
+  "version": "3.5.21",
   "documentation": "https://github.com/bigbadblunt/homeassistant-lightwave2",
   "dependencies": [],
   "codeowners": ["@bigbadblunt"],
-  "requirements": ["lightwave2==0.8.23"],
+  "requirements": [],
   "config_flow": true,
   "iot_class": "cloud_push"
 }

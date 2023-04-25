@@ -54,6 +54,11 @@ async def async_setup(hass, config):
     return True
 
 async def async_setup_entry(hass, config_entry):
+
+    import sys, os
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    sys.path.append(dir_path)
+
     from lightwave2 import lightwave2
 
     hass.data.setdefault(DOMAIN, {})
