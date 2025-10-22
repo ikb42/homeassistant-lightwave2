@@ -1,27 +1,36 @@
-*Note: This repo is receiving minimal maintenance - [a new version is here](https://github.com/LightwaveSmartHome/homeassistant-lightwave-smart)*
+# New version
+
+A significantly updated and improved version of this Home Assistant component for [Lightwave](https://lightwaverf.com) (formerly LightwaveRF) is linked below.
+
+> [!IMPORTANT]
+> **New version: [homeassistant-lightwave-smart](https://github.com/LightwaveSmartHome/homeassistant-lightwave-smart)**
 
 
+# 
 
-# Lightwave2
+## Lightwave2
+
+> [!CAUTION]
+> *Note: The version on this page (homeassistant-lightwave2) has known issues and is no longer maintenanced.*
 
 Home Assistant (https://www.home-assistant.io/) component for controlling LightwaveRF (https://lightwaverf.com) devices with use of a Lightwave Link Plus hub. Controls both generation 1 ("Connect Series") and generation 2 ("Smart Series") devices. Does not work with gen1 hub.
 
-## Setup
+### Setup
 There are two ways to set up:
 
-#### 1. Using HACS (preferred)
+##### 1. Using HACS (preferred)
 This component is available through the Home Assistant Community Store HACS (https://hacs.netlify.com/)
 
 If you use this method, your component will always update to the latest version. But you'll need to set up HACS first.
 
-#### 2. Manual
+##### 2. Manual
 Copy all files and folders from custom_components/lightwave2 to a `<ha_config_dir>/custom_components/lightwave2` directory. (i.e. you should have `<ha_config_dir>/custom_components/lightwave2/__init__.py`, `<ha_config_dir>/custom_components/lightwave2/switch.py`, `<ha_config_dir>/custom_components/lightwave2/translations/en.json` etc)
 
 The latest version is at https://github.com/bigbadblunt/homeassistant-lightwave2/releases/latest
 
 If you use this method then you'll need to keep an eye on this repository to check for updates.
 
-## Configuration:
+### Configuration:
 In Home Assistant:
 
 1. Enter configuration menu
@@ -31,7 +40,7 @@ In Home Assistant:
 5. Enter username and password
 6. This should automatically find all your devices
 
-## Usage:
+### Usage:
 Once configured this should then automatically add all switches, lights, thermostats, blinds/covers, sensors and energy monitors that are configured in your Lightwave app. If you add a new device you will need to restart Home Assistant, or remove and re-add the integration.
 
 Various sensor entities (including power consumption) and controls for the button lock and status LED are exposed within the corresponding entities.
@@ -67,5 +76,5 @@ There are further service calls:
 `lightwave2.whdelete`: Delete a webhook registration (use this if you get "Received message for unregistered webhook" log messages)
 `lightwave2.update_states`: Force a read of all states of devices
 
-## Thanks
+### Thanks
 Credit to Warren Ashcroft whose code I used as a base https://github.com/washcroft/LightwaveRF-LinkPlus
